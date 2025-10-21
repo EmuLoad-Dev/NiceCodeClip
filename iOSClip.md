@@ -10,4 +10,5 @@ let constraint = NSLayoutConstraint(item: button,
                                     attribute: .centerX,
                                     multiplier: multiplier,
                                     constant: 0)
+constraint.isActive = true
 ```
