@@ -2,7 +2,7 @@
 
 利用 setTimeout 切换异步。
 
-```Arkts
+```Javascript
 async asyncTaskData(): Promise<string> {
   const result: string = await new Promise((resolve: Function) => {
     setTimeout(() => {
