@@ -4,7 +4,7 @@
 
 利用 setTimeout 切换异步。
 
-```Javascript
+```Typecript
 async asyncTaskData(): Promise<string> {
   const result: string = await new Promise((resolve: Function) => {
     setTimeout(() => {
@@ -20,10 +20,22 @@ async asyncTaskData(): Promise<string> {
 
 # 判断代码是否在主线程运行
 
-```Javascript
+```Typecript
 import { process } from '@kit.ArkTS';
 
 function isMainThread(): boolean {
   return process.pid === process.tid;
 }
 ```
+
+# 同步获取资源的 string 类型字符串
+
+```Typecript
+try {
+  let resourceMgr = this.getUIContext().getHostContext()?.resourceManager;
+  let stringValue = resourceMgr?.getStringSync($r('app.string.new_task_example').id)
+  console.log(`string value = ${ stringValue ?? '' }`);
+} catch (_) {
+}
+```
+
