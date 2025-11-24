@@ -39,3 +39,16 @@ try {
 }
 ```
 
+# 弹气泡通知
+
+```TypeScript
+try {
+  this.getUIContext().getPromptAction().showToast({
+    message: '操作成功！', // 提示文本
+    duration: 2000         // 显示 2 秒
+  })
+} catch (_) {
+}
+```
+
+
