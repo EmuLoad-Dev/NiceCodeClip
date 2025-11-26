@@ -51,4 +51,10 @@ try {
 }
 ```
 
+# 系统内置图标
 
+```TypeScript
+Text() {
+  SymbolSpan($r('sys.symbol.dart_target'))
+}
+```
