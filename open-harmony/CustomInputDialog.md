@@ -1,4 +1,4 @@
-
+```TypeScript
 @CustomDialog
 struct CustomDialogExample {
   controller?: CustomDialogController;
@@ -28,3 +28,4 @@ struct CustomDialogUser {
     }.width('100%').margin({ top: 5 })
   }
 }
+```
