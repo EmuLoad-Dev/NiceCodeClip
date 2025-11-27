@@ -1,3 +1,4 @@
+```TypeScript
 @Entry
 @Component
 struct ScrollExample {
@@ -29,3 +30,4 @@ struct ScrollExample {
     .edgeEffect(EdgeEffect.Spring) // 滚动到边沿后回弹
   }
 }
+```
